@@ -1,4 +1,5 @@
 print("Hello!")
-a = 2
 
-234
+number = 35
+print(id(35))
+print(id(number))

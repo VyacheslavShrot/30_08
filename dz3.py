@@ -1,6 +1,6 @@
 x = input()
 xstr = str(x)
-print((xstr[::-1]))
+print(xstr[::-1])
 
 
 

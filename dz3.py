@@ -1,6 +1,12 @@
-x = input()
-xstr = str(x)
-print(xstr[::-1])
+n1 = int(input("Type x:"))
+n2 = 0
+
+while n1 > 0:
+  digit = n1 % 10
+  n1 //= 10
+  n2 *= 10
+  n2 += digit
+print(n2)
 
 
 

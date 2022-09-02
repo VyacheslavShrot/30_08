@@ -1,10 +1,7 @@
-x = input()
-print(x[0])
-print(x[1])
-print(x[2])
-print(x[3])
-
-
-
-
+x = 100
+digit = int(input("Type x:"))
+left, right = divmod(digit, x)
+print(left, right)
+left, right = divmod(digit, 10)
+print(left, right)
 

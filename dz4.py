@@ -3,11 +3,11 @@ oper = input("Type operation:")
 number2 = float(input("Type second number:"))
 if oper == "+":
     print(number1 + number2)
-if oper == "-":
+elif oper == "-":
     print(number1 - number2)
-if oper == "*":
+elif oper == "*":
     print(number1 * number2)
-if oper == "/":
+elif oper == "/":
     print(number1 / number2)
 else:
     print("Error")

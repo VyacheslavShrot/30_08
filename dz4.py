@@ -10,8 +10,7 @@ elif oper == "-":
 elif oper == "*":
     print(number1 * number2)
 elif oper == "/":
-    number2 != 0
-elif oper == "/":
-    print(number1 / number2)
+    number2 != 0 and print(number1 / number2)
 else:
     print("Error")
+

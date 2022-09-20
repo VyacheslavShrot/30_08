@@ -1,11 +1,9 @@
-lst = [1, 0, 2, 0, 3, 0, 0, 0]
+lst = [1, 0, 3, 0, 0, 0, 5]
+result = []
+zeros = []
 for n in lst:
     if n == 0:
-        a = lst.remove(0)
-        while 0 in lst:
-            print(lst + [n])
-            break
-
-
-
-
+        zeros.append(n)
+    elif n != 0:
+        result.append(n)
+print(result + zeros)

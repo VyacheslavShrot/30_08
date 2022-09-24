@@ -2,11 +2,7 @@ while True:
     s = input("Знак (+, -, *, /):")
     a = float(input("a = "))
     b = float(input("b = "))
-    system_con = input("Хотите дальше вычислять?")
-    if system_con == "yes":
-        continue
-    else:
-        break
+
 
     if s == "+":
         print(a + b)
@@ -19,6 +15,11 @@ while True:
             print(a / b)
         else:
             print("Error")
+    system_con = input("Хотите дальше вычислять?")
+    if system_con == "yes":
+        continue
+    else:
+        break
 
 
 

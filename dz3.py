@@ -1,13 +1,16 @@
-n1 = int(input("Type x:"))
-n2 = 0
+numbers = int(input("Введите 5-значное число:"))
+print(numbers)
+x = 100
+digit = numbers
+a, b = divmod(digit, x)
+c, n = divmod(a, 10)
+y, u = divmod(b, 10)
+p, o = divmod(c, 10)
 
-while n1 > 0:
-  digit = n1 % 10
-  n1 //= 10
-  n2 *= 10
-  n2 += digit
-print(n2)
-
-
-
+q = str(u)
+g = str(y)
+v = str(n)
+h = str(o)
+l = str(p)
+print(q + g + v + h + l)
 

@@ -1,16 +1,6 @@
 numbers = int(input("Введите 5-значное число:"))
-print(numbers)
-x = 100
-digit = numbers
-a, b = divmod(digit, x)
-c, n = divmod(a, 10)
-y, u = divmod(b, 10)
-p, o = divmod(c, 10)
-
-q = str(u)
-g = str(y)
-v = str(n)
-h = str(o)
-l = str(p)
-print(q + g + v + h + l)
-
+n1, numbers = divmod(numbers, 10000)
+n2, numbers = divmod(numbers, 1000)
+n3, numbers = divmod(numbers, 100)
+n4, n5 = divmod(numbers, 10)
+print(n5 * 10000 + n4 * 1000 + n3 * 100 + n2 * 10 + n1)

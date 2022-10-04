@@ -1,10 +1,10 @@
 
 from string import ascii_letters
 
-left, right = input()
-print(left + "-" + right)
+a, b, c = (input())
+print(a, b, c)
 
-print(ascii_letters[ascii_letters.index(left):ascii_letters.index(right) + 1])
+print(ascii_letters[ascii_letters.index(a):ascii_letters.index(c) + 1])
 
 
 

@@ -1,9 +1,13 @@
 def second_index(text, symbol):
     if text.find(symbol) == True:
         if text.find(symbol, text.find(symbol) + 1) == True:
-            l = (text.find(symbol))
+            l = text.find(symbol)
             text = text.find(symbol, l + 1)
-            return text
+        else:
+            return None
+    else:
+        return None
+    return text
 
 
 

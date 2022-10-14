@@ -1,11 +1,15 @@
 def add_one(lst: list) -> list:
     a = ''
+
     for n in lst:
         a += str(n)
+
     a = int(a) + 1
     b = []
+
     for i in str(a):
         b.append(int(i))
+
     return b
 
 

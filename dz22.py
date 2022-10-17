@@ -1,17 +1,20 @@
 def find_unique_value(lst: list) -> float:
-    a = []
-    b = set(lst)
+    set_res = set(lst)
+    list_res = lst
 
-    for n in b:
-        a.append(n)
+    for i in list_res:
+        if list_res.count(i) == 1:
+            list_res.remove(i)
 
-    return a
+    list_res = set(list_res)
+    dif_set = set_res.difference(list_res)
 
+    dif_set = list(dif_set)
 
+    dif_set = ''.join(map(str, dif_set))
+    dif_set = float(dif_set)
 
-
-
-
+    return dif_set
 
 
 print(find_unique_value([1, 2, 1, 1]))
